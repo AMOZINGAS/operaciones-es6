@@ -19,7 +19,16 @@ function dividir(a, b) {
     }
     return a / b;
 }
+function pi() {
+    return Math.PI;
+}
 
+function modulo(numero1, numero2) {
+    if (numero2 === 0) {
+        throw new Error("No se puede calcular el módulo con divisor cero");
+    }
+    return numero1 % numero2;
+}
 
 
 
