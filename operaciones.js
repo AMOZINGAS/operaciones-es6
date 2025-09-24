@@ -1,11 +1,12 @@
-function sumar(numero1, numero2){
-
-    return numero1 + numero2;
-
+function multiplicar(a, b) {
+    return a * b;
 }
 
-function restar(numero1, numero2){
-
-    return numero1 - numero2;
-
+function dividir(a, b) {
+    if (b === 0) {
+        throw new Error("No se puede dividir por cero");
+    }
+    return a / b;
 }
+
+module.exports = { multiplicar, dividir };
